@@ -1,0 +1,257 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 216 320)
+	(text "control_unit" (rect 5 0 49 12)(font "Arial" ))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RST" (rect 0 0 20 12)(font "Arial" ))
+		(text "RST" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 20 12)(font "Arial" ))
+		(text "CLK" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Z" (rect 0 0 7 12)(font "Arial" ))
+		(text "Z" (rect 21 59 28 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "C" (rect 0 0 7 12)(font "Arial" ))
+		(text "C" (rect 21 75 28 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Op[4..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "Op[4..0]" (rect 21 91 54 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "Shift[2..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "Shift[2..0]" (rect 142 27 179 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "IDMWrite" (rect 0 0 40 12)(font "Arial" ))
+		(text "IDMWrite" (rect 139 43 179 55)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48)(line_width 1))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "IRegen" (rect 0 0 29 12)(font "Arial" ))
+		(text "IRegen" (rect 150 59 179 71)(font "Arial" ))
+		(line (pt 200 64)(pt 184 64)(line_width 1))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "DRegen" (rect 0 0 34 12)(font "Arial" ))
+		(text "DRegen" (rect 145 75 179 87)(font "Arial" ))
+		(line (pt 200 80)(pt 184 80)(line_width 1))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "IDMSrc" (rect 0 0 31 12)(font "Arial" ))
+		(text "IDMSrc" (rect 148 91 179 103)(font "Arial" ))
+		(line (pt 200 96)(pt 184 96)(line_width 1))
+	)
+	(port
+		(pt 200 112)
+		(output)
+		(text "ASrc0" (rect 0 0 27 12)(font "Arial" ))
+		(text "ASrc0" (rect 152 107 179 119)(font "Arial" ))
+		(line (pt 200 112)(pt 184 112)(line_width 1))
+	)
+	(port
+		(pt 200 128)
+		(output)
+		(text "RegWrite" (rect 0 0 40 12)(font "Arial" ))
+		(text "RegWrite" (rect 139 123 179 135)(font "Arial" ))
+		(line (pt 200 128)(pt 184 128)(line_width 1))
+	)
+	(port
+		(pt 200 144)
+		(output)
+		(text "ASrc1[1..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "ASrc1[1..0]" (rect 135 139 179 151)(font "Arial" ))
+		(line (pt 200 144)(pt 184 144)(line_width 3))
+	)
+	(port
+		(pt 200 160)
+		(output)
+		(text "BSrc[1..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "BSrc[1..0]" (rect 141 155 179 167)(font "Arial" ))
+		(line (pt 200 160)(pt 184 160)(line_width 3))
+	)
+	(port
+		(pt 200 176)
+		(output)
+		(text "PCen" (rect 0 0 22 12)(font "Arial" ))
+		(text "PCen" (rect 157 171 179 183)(font "Arial" ))
+		(line (pt 200 176)(pt 184 176)(line_width 1))
+	)
+	(port
+		(pt 200 192)
+		(output)
+		(text "ALUCtrl[2..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "ALUCtrl[2..0]" (rect 124 187 179 199)(font "Arial" ))
+		(line (pt 200 192)(pt 184 192)(line_width 3))
+	)
+	(port
+		(pt 200 208)
+		(output)
+		(text "RegSrc[1..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "RegSrc[1..0]" (rect 129 203 179 215)(font "Arial" ))
+		(line (pt 200 208)(pt 184 208)(line_width 3))
+	)
+	(port
+		(pt 200 224)
+		(output)
+		(text "state[3..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "state[3..0]" (rect 141 219 179 231)(font "Arial" ))
+		(line (pt 200 224)(pt 184 224)(line_width 3))
+	)
+	(port
+		(pt 200 240)
+		(output)
+		(text "next_state[3..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "next_state[3..0]" (rect 118 235 179 247)(font "Arial" ))
+		(line (pt 200 240)(pt 184 240)(line_width 3))
+	)
+	(port
+		(pt 200 256)
+		(output)
+		(text "FlgWrite" (rect 0 0 34 12)(font "Arial" ))
+		(text "FlgWrite" (rect 145 251 179 263)(font "Arial" ))
+		(line (pt 200 256)(pt 184 256)(line_width 1))
+	)
+	(port
+		(pt 200 272)
+		(output)
+		(text "RD2en" (rect 0 0 29 12)(font "Arial" ))
+		(text "RD2en" (rect 150 267 179 279)(font "Arial" ))
+		(line (pt 200 272)(pt 184 272)(line_width 1))
+	)
+	(parameter
+		"S0"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S1"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S2"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S3"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S4"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S5"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S6"
+		"0110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S7"
+		"0111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S8"
+		"1000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S9"
+		"1001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S10"
+		"1010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S11"
+		"1011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S12"
+		"1100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S13"
+		"1101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S14"
+		"1110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S15"
+		"1111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 184 288)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 216 -64 316 16))
+)
